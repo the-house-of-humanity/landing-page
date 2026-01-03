@@ -1,0 +1,152 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth; /* Makes clicking nav links scroll smoothly */
+    background-color: #fff;
+}
+
+/* Header & Navigation */
+header {
+    background: #ffffff;
+    padding: 20px 0;
+    position: fixed; /* Stays at top */
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero / Splash Section */
+.hero {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    text-align: center;
+    padding-top: 80px; /* Accounts for fixed header */
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes image a circle */
+    object-fit: scale-down; /* Fixed typo from sccale-down */
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.main-name {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+/* Content Sections General */
+.content-sec {
+    padding: 100px 20px;
+    min-height: 60vh;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-sec h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Resume Specific Styling [cite: 101, 102] */
+.resume-wrapper {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.resume-item {
+    margin-bottom: 40px;
+}
+
+.resume-item h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry h3 {
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.entry span {
+    display: block;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.resume-item ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Skills Grid [cite: 103, 105] */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+.skills-grid li::before {
+    content: "● ";
+    color: #007bff;
+    padding-right: 8px;
+}
+.work-entry {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+blockquote {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #eee;
+    border-left: 5px solid #007bff;}
+    font-style: italic;
+}
